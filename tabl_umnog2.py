@@ -5,7 +5,8 @@ i=0
 while (i <=8):
     j=0
     while (j <=8):
-        print(str(arr1[i]) + ' * ' + str(arr2[j]) + ' = ' + str(arr1[i]*arr2[j]))
+        print(str(arr1[j]) + ' * ' + str(arr2[i]) + ' = ' + str(arr1[j]*arr2[i]),
+              end=' '*(20-len(str(arr1[j]) + ' * ' + str(arr2[i]) + ' = ' + str(arr1[j]*arr2[i]))))
         j +=1
     i += 1
-    print('')
+    print(end='\n')
